@@ -89,28 +89,40 @@
 			<strong>4. Kus võimalik, seal väljasta tabelis iga inimese vanema nimi </strong>
 
 			<table style="width:20%; border:1px solid black" >
+				<tr>
+					<td>Nimi</td>
+					<td>vanemas</td>
+					<td>vanus</td>
+				</tr>
 					<xsl:for-each select="//inimene">
 						<xsl:sort select="synd"/>
-				<tr style="border:1px solid black">
-			
-				
-				<td style="border:1px solid black">
-					<xsl:if test="../..">
-						<xsl:value-of select="../../nimi"/>
-					</xsl:if>
-					</td>
-					<td style="border:1px solid black" >
-						<xsl:value-of select="nimi"/>
+				<tr>
+					<xsl:if test="string-length(nimi)&lt;7">
+				<td style="background: lightgreen">
+					<xsl:value-of select="nimi" />
 				</td>
+				</xsl:if>
+				<xsl:if test="string-length(nimi)&gt;7">
+					<td>
+						<xsl:value-of select="nimi" />
+					</td>
+				</xsl:if>
+					<td>
+						<xsl:value-of select="../../nimi"/>
+					</td>
+
+					<td style="border:1px solid black">
+						<xsl:value-of select="2022 - @synd "/>
+					</td>
 			
-			</tr>
+				</tr>
 					</xsl:for-each>
 			</table>
 		</ul>
 		6. Выводить в  таблице возраст каждого ребенка
 		<ul>
-		<xsl:for-each select="//inimene[lapsed]">
-			<xsl:sort select="lapsed/inimene"/>
+		<xsl:for-each select="//inimene">
+			<xsl:sort select="lapsed"/>
 			<li>
 				<xsl:value-of select="concat(nimi,' , ',2022 - @synd )"/>
 			</li>
