@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<inimesed>
+	<inimene>
+		<eesnimi>Daria</eesnimi>
+		<perekonanimi>Evtina</perekonanimi>
+		<synd>2004</synd>
+	</inimene>
+	<inimene>
+		<eesnimi>Jaan</eesnimi>
+		<perekonanimi>Krohhin</perekonanimi>
+		<synd>2002</synd>
+	</inimene>
+
+	<inimene>
+		<eesnimi>Polina</eesnimi>
+		<perekonanimi>Tsernaja</perekonanimi>
+		<synd>2004</synd>
+	</inimene>
+
+	<inimene>
+		<eesnimi>Nikita</eesnimi>
+		<perekonanimi>Rimitsen</perekonanimi>
+		<synd>2004</synd>
+	</inimene>
+
+	<inimene>
+		<eesnimi>Daria</eesnimi>
+		<perekonanimi>Pork</perekonanimi>
+		<synd>2001</synd>
+	</inimene>
+	<inimene>
+		<eesnimi>Maksim</eesnimi>
+		<perekonanimi>Tsõberev</perekonanimi>
+		<synd>2002</synd>
+	</inimene>
+</inimesed>
